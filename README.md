@@ -67,3 +67,12 @@ This is once again related to the branch cut along the negative real axis.
 
 Notice once again the double-periods: the real lines and imaginary lines get mapped to 
 closed loops -- except those lines that get mapped to infinity.
+
+
+###Lie algebras###
+
+A C++ library for working with finite dimensional associative algebras with a Lie bracket defined between
+basis elements (for instance, universal enveloping algebras). A simple program that exposes the functionality
+of this library is also provided, along with definition files for U(sl_2) and simple 
+infinitesimal Cherednik algebras. Depending on future usage, I may use swig to allow a Python interface
+to the library and make usage of the code more user-friendly.
