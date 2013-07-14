@@ -18,3 +18,5 @@ grid according to the function output: the modulus is indicated by shade (larger
 brighter colors), and the argument is indicated by color (the real axis is red, numbers with argument
 of 120 degrees are green, and those with 240 degrees are blue). `square_plot`, on the other hand,
 computes the images of horizontal and vertical lines under the given function.
+
+![](complex-functions/sine.png?raw=true)
