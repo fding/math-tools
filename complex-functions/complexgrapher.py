@@ -92,12 +92,17 @@ def plot_table(nums,size=(screen[0]/2,screen[1]/2),mode='',brightness=0.75):
 def plot_function(func,rrange,irange,size=(screen[0]/2,screen[1]/2),mode='',brightness=0.75):
     '''
         Plots a complex function f. Each complex number is given as a magnitude and an argument.
+        rrange and irange indicate the size of the grid you want to plot the function in.
+        
         The output is a PIL Image of the graph. Each point z is colored
         according to the magnitude and argument of f(z): the color indicates the argument, with pure red being
         real (pure green and pure blue are along the other cube roots of unity). The magnitude is shown by the intensity:
         Very bright regions have large magnitudes, and dark regions having small magnitudes.
 
         Brightness is an argument that gives the brightness (out of 1) of the mediumly bright points.
+        
+        Example:
+        plot_function(lambda z: z**2, [-2,2],[-2,2])
     '''
     return plot_table(tabulate(func,rrange,irange,size),size,mode,brightness)
     
