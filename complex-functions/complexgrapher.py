@@ -110,7 +110,13 @@ def square_plot(func,rrange,irange,rorange,iorange,hlines=7,vlines=7,size=(scree
     '''
         Plots a square with hlines horizontal lines and vlines vertical lines in the input plane,
         and outputs the image of that square under func.
+        rrange and irange indicate the size of the input grid,
+        and rorange and iorange specify the size of the output grid.
+        
         Resolution, an integer, determines the density of input points.
+        
+        Example:
+        square_plot(cmath.sin,[-2,2],[-2,2],[-4,4],[-4,4]).
     '''
     cgraph=Image.new('1',size,True)
     domain=[]
